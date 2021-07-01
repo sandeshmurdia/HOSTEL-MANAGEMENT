@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ROOM ALLOTMENT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            background-image: url('welcome.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 6px 6px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f4511e;
+        }
+
+        .main {
+            margin-left: 200px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        .form-group {
+            margin-left: 17%;
+
+        }
+
+
+
+        .btn-primary {
+            margin-left: 5.3%;
+        }
+
+        h1 {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 50px;
+            font-weight: bold;
+            margin-left: 38%;
+        }
+        form{
+            padding-left: 12%;
+        }
+        .custom{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-4">
+            <div class="sidenav">
+                <br><br>
+                <a href="dashboard.html">Dashboard</a><br><br>
+                <a href="student.html">Student Details</a><br><br><br>
+                <a href="fee.html">Fee Details</a><br><br><br>
+                <a href="addroom.html">Add Room</a><br><br><br>
+                <a href="vacate.html">Vacate Room</a><br><br><br><br><br>
+                <a href="main.html">Logout</a>
+            </div>
+        </div>
+
+ <h2>ROOM ALLOTMENT</h2>
+        <div class="w-50 m-auto">
+            <form action="connect.php" method="post">
+     <br><br><br>
+                <div class="row">
+                    <div class="col-lg-4 custom">
+                        <label> NAME OF THE STUDENT</label>
+                        <input type="text" name="StudName" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="col-lg-4 custom">
+                        <label> REGISTRATION NUMBER OF THE STUDENT</label>
+                        <input type="text" name="RegNo" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="col-lg-4 custom">
+                        <label> GENDER</label>
+                        <input type="text" name="Gender" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 custom">
+                        <label> ENTER MOBILE NUMBER</label>
+                        <input type="text" name="MobileNo" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="col-lg-4 custom">
+                        <label> ENTER EMAIL ID</label>
+                        <input type="text" name="MailId" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="col-lg-4 custom">
+                        <label> ENTER PARENTS MOBILE NUMBER
+                        </label>
+                        <input type="text" name="ParentNo" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 custom">
+                        <label> ENTER ROOM NUMBER</label>
+                        <input type="text" name="RoomNo" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="col-lg-4 custom">
+                        <label>ENTER BLOCK NUMBER</label>
+                        <input type="text" name="BlockNo" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="col-lg-4 custom">
+                        <label> ENTER EMERGENCY CONTACT NUMBER</label>
+                        <input type="text" name="ENo" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 custom">
+                        <label> ENTER BANK ACCOUNT HOLDER NAME</label>
+                        <input type="text" name="BHName" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="col-lg-4 custom">
+                        <label>ENTER BANK ACCOUNT NUMBER</label>
+                        <input type="text" name="BANo" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="col-lg-4 custom">
+                        <label> ENTER BANK TRANSACTION ID
+                        </label>
+                        <input type="text" name="TId" autocomplete="off" class="form-control">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LOGIN</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="login">
+    <h1><b>GOOD HOST SPACES</b></h1><br><br>
+    <form method="post" name="myform">
+      <input type="text" name="u" placeholder="Username" required="required" />
+      <input type="password" name="p" placeholder="Password" required="required" />
+
+      <button type="submit" class="btn btn-primary btn-block btn-large btn-dark" onclick="validateform()" >LOGIN</button>
+    </form>
+ 
+  </div>
+  <script>  
+    function validateform(){  
+    var name=document.myform.u.value;  
+    var password=document.myform.p.value;  
+      
+    if (name=="sandesh" && password=="sandesh"){  
+      alert("LOGIN SUCCESSFUL");
+      window.open("admin.html");
+    
+      return true;  
+    }
+    else {alert("LOGIN FAILED");}
+  }
+    </script>  
+</body>
+
+</html>
